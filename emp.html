@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Belmin Muratovic" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="projekat.css" />
+    <title>Dinamicka stanja</title>
+  </head>
+  <body>
+    <form method="post" action="">
+      <div class="forma">
+        <div>
+          <label for="Pn">Nominalna snaga: </label>
+          <input type="number" step="any" name="Pn" id="Pn" /> kw
+        </div>
+        <div>
+          <label for="Un">Nominalni napon: </label>
+          <input type="number" step="any" name="Un" id="Un" /> V
+        </div>
+        <div>
+          <label for="In">Nominalna struja: </label>
+          <input type="number" step="any" name="In" id="In" /> A
+        </div>
+        <div>
+          <label for="n_n">Nominalna brzina obrtanja: </label> ob/min
+          <input type="number" step="any" name="n_n" id="n_n" />
+        </div>
+        <div>
+          <label for="n_s">Sinhrona brzina obrtanja: </label> ob/min
+          <input type="number" step="any" name="n_s" id="n_s" />
+        </div>
+        <div>
+          <label for="Mn">Nominalni obrtni moment: </label>
+          <input type="number" step="any" name="Mn" id="Mn" /> Nm
+        </div>
+        <div>
+          <label for="IpIn">Odnos polazne i nominalne struje: </label>
+          <input type="number" step="any" name="IpIn" id="IpIn" />
+        </div>
+        <div>
+          <label for="MpMn">Odnos polaznog i nominalnog momenta: </label>
+          <input type="number" step="any" name="MpMn" id="MpMn" />
+        </div>
+        <div>
+          <label for="MprMn">Odnos prekretnog i nominalnog momenta: </label>
+          <input type="number" step="any" name="MprMn" id="MprMn" />
+        </div>
+        <div>
+          <label for="Jrm">Moment inercije rotora: </label>
+          <input type="number" step="any" name="Jrm" id="Jrm" /> kgm^2
+        </div>
+        <div>
+          <label for="cos_fi_m">Nominalni faktor snage: </label>
+          <input type="number" step="any" name="cos_fi_m" id="cos_fi_m" />
+        </div>
+        <div>
+          <label for="cos_fi_mp">Faktor snage pri pokretanju: </label>
+          <input type="number" step="any" name="cos_fi_mp" id="cos_fi_mp" />
+        </div>
+        <div>
+          <label for="eta">Stepen korisnog dejstva: </label>
+          <input type="number" step="any" name="eta" id="eta" />
+        </div>
+        <div>
+          <label for="R1">Otpor po fazi statora: </label>
+          <input type="number" step="any" name="R1" id="R1" />
+        </div>
+        <div>
+          <label for="m1">Masa bakra statora: </label>
+          <input type="number" step="any" name="m1" id="m1" /> kg
+        </div>
+        <div>
+          <label for="m2_vk">Masa bakra rotora (vanjski kavez): </label>
+          <input type="number" step="any" name="m2_vk" id="m2_vk" /> kg
+        </div>
+        <div>
+          <label for="c1">Specificna toplota bakra statora: </label>
+          <input type="number" step="any" name="c1" id="c1" /> Ws/kg°C
+        </div>
+        <div>
+          <label for="c2">Specificna toplota bakra rotora: </label>
+          <input type="number" step="any" name="c2" id="c2" /> Ws/kg°C
+        </div>
+        <div>
+          <label for="k1">Koeficijent odvodjenja toplote sa statora: </label>
+          <input type="number" step="any" name="k1" id="k1" />
+        </div>
+        <div>
+          <label for="k2">Koeficijent odvodjenja toplote sa rotora: </label>
+          <input type="number" step="any" name="k2" id="k2" />
+        </div>
+        <div>
+          <label for="k3"
+            >Koeficijent raspodjele gubitaka izmedju kaveza:
+          </label>
+          <input type="number" step="any" name="k3" id="k3" />
+        </div>
+        <div>
+          <label for="t">Temperatura radne okoline: </label>
+          <input ype="number" step="any" name="t" id="t" /> °C
+        </div>
+        <div>
+          <label for="Jt">Moment inercije tereta: </label>
+          <input type="number" step="any" name="Jt" id="Jt" /> kgm^2
+        </div>
+        <div>
+          <label for="I">Struja opterecenja: </label>
+          <input ype="number" step="any" name="I" id="I" />
+        </div>
+        <div>
+          <label for="Mm">Moment motora: </label>
+          <input type="number" step="any" name="Mm" id="Mm" />
+        </div>
+        <div>
+          <label for="Mt">Moment tereta: </label>
+          <input type="number" step="any" name="Mt" id="Mt" />
+        </div>
+      </div>
+    </form>
+    <button onclick="load()" id="submit">Potvrdi</button>
+    <div id="output"></div>
+    <script src="projekat.js"></script>
+  </body>
+</html>
